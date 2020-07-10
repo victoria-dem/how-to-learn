@@ -64,6 +64,10 @@
   text-decoration: none;
 }
 
+.header__link:hover {
+  opacity: .7;
+}
+
 .header__main-illustration {
   width: 765px;
   height: 608px;
@@ -261,6 +265,10 @@
   color: #000;
 }
 
+.feynman__link:hover {
+  opacity: .7;
+}
+
 /*    Block Kaufman    */
 .kaufman {
   display: flex;
@@ -324,6 +332,11 @@
   margin: 0 0 16px;
   padding: 0;
   list-style-type: none;
+  color: #fff;
+  text-decoration: none;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
 }
 
 .logo_place_footer {
@@ -341,12 +354,4 @@
 .footer__column_content_social {
   display: flex;
   flex-direction: column;
-}
-
-.footer__column-link {
-  color: #fff;
-  text-decoration: none;
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: normal;
 }
