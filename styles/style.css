@@ -9,7 +9,6 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-
 /* block header */
 .logo {
   width: 183px;
@@ -148,6 +147,7 @@
   line-height: 69px;
   font-size: 60px;
   font-weight: bold;
+  color: #000;
 }
 
 .section-subtitle {
@@ -157,13 +157,6 @@
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-}
-
-.section-title_theme_white {
-  color: #000;
-}
-
-.section-subtitle_theme_white {
   color: #000;
 }
 
@@ -182,6 +175,9 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .table_theme_dark {
@@ -189,9 +185,9 @@
 }
 
 .table__cell {
-  list-style-type: none;
-  padding-left: 0;
   margin: 0;
+  margin: 60px 0 0;
+  width: 250px;
 }
 
 .table__cell_theme_white {
@@ -225,7 +221,7 @@
 
 /*   Block Feynman  */
 .feynman {
-  height: 790px;
+  min-height: 790px;
   position: relative;
   background-color: #f2f2f2;
   background-image: url(../images/feynman.png);
@@ -239,7 +235,7 @@
   width: 648px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
+  padding-top: 100px;
   margin-bottom: 70px;
   text-align: center;
   line-height: 1.15;
@@ -257,7 +253,7 @@
 .feynman__link {
   position: absolute;
   top: 50%;
-  right: 0;
+  right: 48px;
   text-decoration: none;
   line-height: 51px;
   font-size: 36px;
@@ -287,6 +283,8 @@
   z-index: 0;
   width: 877px;
   height: 877px;
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: contain;
 }
 
 /*       Footer section     */
@@ -313,7 +311,6 @@
 }
 
 .footer__author {
-  margin: 18px 0;
   padding: 0;
   line-height: 25px;
   font-size: 18px;
@@ -332,11 +329,6 @@
   margin: 0 0 16px;
   padding: 0;
   list-style-type: none;
-  color: #fff;
-  text-decoration: none;
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: normal;
 }
 
 .logo_place_footer {
@@ -354,4 +346,16 @@
 .footer__column_content_social {
   display: flex;
   flex-direction: column;
+}
+
+.footer__column-link {
+  color: #fff;
+  text-decoration: none;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__column-link:hover {
+  opacity: .7;
 }
